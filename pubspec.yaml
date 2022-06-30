@@ -1,5 +1,5 @@
 name: super_text
-description: A new Flutter plugin project.
+description: A library that uses to replace tags in text with Widget.
 version: 0.0.1
 homepage:
 
