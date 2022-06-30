@@ -20,13 +20,37 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    final List<SuperTag> tags = [
+      SuperTextTag(
+        name: 'a',
+        builder: ((child, attributes) {
+          return const TextSpan(text: '牛啊', style: TextStyle(fontSize: 30));
+        }),
+      ),
+      SuperWidgetTag(
+        name: 'img',
+        builder: ((child, attributes) {
+          final src = attributes['src'];
+          if (src == null) {
+            return const SizedBox();
+          }
+          return Image.network(src, width: 100, height: 100);
+        }),
+      ),
+    ];
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Plugin example app'),
         ),
-        body: const Center(
-          child: SuperText('Running!!<a>123</a><a>123</a>'),
+        body: Center(
+          child: SuperText(
+            'Running!!<a>123</a><b>bbb</b><img src="https://img.yzcdn.cn/vant/logo.png">123</img><a>123</a>',
+            tags: tags,
+            style: const TextStyle(
+              fontSize: 18,
+            ),
+          ),
         ),
       ),
     );
