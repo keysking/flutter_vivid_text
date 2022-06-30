@@ -1,8 +1,3 @@
+library super_text;
 
-import 'super_text_platform_interface.dart';
-
-class SuperText {
-  Future<String?> getPlatformVersion() {
-    return SuperTextPlatform.instance.getPlatformVersion();
-  }
-}
+export 'src/super_text.dart';

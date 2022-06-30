@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:super_text/super_text.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: const Center(
-          child: Text('Running'),
+          child: SuperText('Running!!<a>123</a><a>123</a>'),
         ),
       ),
     );
