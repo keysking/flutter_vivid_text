@@ -13,7 +13,7 @@ class SuperText extends StatelessWidget {
   Widget build(BuildContext context) {
     final map = <String, SuperTag>{};
     for (final tag in tags) {
-      map[tag.name] = tag;
+      map[tag.name.toLowerCase()] = tag;
     }
     final spans = parseToSpan(text, map);
 

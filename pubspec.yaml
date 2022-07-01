@@ -1,5 +1,5 @@
 name: super_text
-description: A library that uses to replace tags in text with Widget.
+description: A great solution for generating "mixed typesetting of text and widget" based on text.
 version: 0.0.1
 homepage:
 

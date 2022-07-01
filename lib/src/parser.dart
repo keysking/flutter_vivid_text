@@ -20,7 +20,10 @@ List<InlineSpan> parseToSpan(String text, Map<String, SuperTag> tagMap) {
       final tag = tagMap[name];
       if (tag is SuperWidgetTag) {
         // TODO child
-        result.add(WidgetSpan(child: tag.builder([], element.attributes)));
+        result.add(WidgetSpan(
+          alignment: PlaceholderAlignment.middle,
+          child: tag.builder([], element.attributes),
+        ));
       } else if (tag is SuperTextTag) {
         result.add(tag.builder(node.innerHtml, element.attributes));
       } else {
