@@ -77,8 +77,8 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-}
+} 
 ```
-![example](https://github.com/keysking/flutter_super_text/blob/main/doc/img/example.gif)
-
-
+<div align=center>
+<img width="350"  src="https://github.com/keysking/flutter_super_text/blob/main/doc/img/example.gif?raw=true"/>
+</div>
