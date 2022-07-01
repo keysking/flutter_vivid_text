@@ -1,4 +1,4 @@
-# super_text
+# supertext
 
 A great solution for generating "mixed typesetting of text and widget" based on text.
 

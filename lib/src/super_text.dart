@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:super_text/src/parser.dart';
+import 'package:supertext/src/parser.dart';
 
 import 'tag.dart';
 

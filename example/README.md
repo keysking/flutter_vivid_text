@@ -1,6 +1,6 @@
-# super_text_example
+# supertext_example
 
-Demonstrates how to use the super_text plugin.
+Demonstrates how to use the supertext plugin.
 
 ## Getting Started
 

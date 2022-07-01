@@ -1,4 +1,4 @@
-package com.keysking.super_text_example
+package com.keysking.supertext_example
 
 import io.flutter.embedding.android.FlutterActivity
 

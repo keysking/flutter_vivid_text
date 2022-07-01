@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:super_text/super_text.dart';
-import 'package:super_text_example/user_page.dart';
+import 'package:supertext/super_text.dart';
+import 'package:supertext_example/user_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('super_text Demo'),
+        title: const Text('supertext Demo'),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:super_text_example/home_page.dart';
+import 'package:supertext_example/home_page.dart';
 
 void main() {
   runApp(const MyApp());
