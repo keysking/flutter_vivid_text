@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:supertext/super_text.dart';
+import 'package:supertext/supertext.dart';
 import 'package:supertext_example/user_page.dart';
 
 class HomePage extends StatelessWidget {
