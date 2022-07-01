@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:supertext/supertext.dart';
-import 'package:supertext_example/user_page.dart';
+import 'package:vivid_text/vivid_text.dart';
+import 'package:vivid_text_example/user_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    final List<SuperTag> tags = [
-      SuperWidgetTag(
+    final List<VividTag> tags = [
+      VividWidgetTag(
         name: 'user',
         builder: ((child, attributes) {
           final name = attributes['name'];
@@ -20,13 +20,13 @@ class HomePage extends StatelessWidget {
               child: Text('$name', style: const TextStyle(fontSize: 18)));
         }),
       ),
-      SuperWidgetTag(
+      VividWidgetTag(
         name: 'star',
         builder: ((child, attributes) {
           return Icon(Icons.star, color: Colors.yellow[700]);
         }),
       ),
-      SuperTextTag(
+      VividTextTag(
         name: 'hoursToNow',
         builder: ((child, attributes) {
           final time = DateTime.fromMillisecondsSinceEpoch(int.parse(attributes['time']!));
@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('supertext Demo'),
+        title: const Text('vivid_text Demo'),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
@@ -60,7 +60,7 @@ class HomePage extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         // This line is important.
-                        child: SuperText(logs[index], tags: tags, style: const TextStyle(fontSize: 18)),
+                        child: VividText(logs[index], tags: tags, style: const TextStyle(fontSize: 18)),
                       ),
                     ),
                   );

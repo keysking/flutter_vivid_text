@@ -1,7 +1,7 @@
-name: supertext
+name: vivid_text
 description: A great solution for generating "mixed typesetting of text and widget" based on text.
 version: 0.0.1
-homepage: https://github.com/keysking/flutter_super_text
+homepage: https://github.com/keysking/flutter_vivid_text
 
 environment:
   sdk: ">=2.17.3 <3.0.0"
@@ -11,7 +11,6 @@ dependencies:
   flutter:
     sdk: flutter
   html: ^0.15.0
-  plugin_platform_interface: ^2.0.2
 
 dev_dependencies:
   flutter_test:

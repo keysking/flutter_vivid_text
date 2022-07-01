@@ -8,7 +8,7 @@ InlineSpan defaultSpanBuilder(html.Node node) {
   return TextSpan(text: node.text, style: const TextStyle(color: Colors.red));
 }
 
-List<InlineSpan> parseToSpan(String text, Map<String, SuperTag> tagMap) {
+List<InlineSpan> parseToSpan(String text, Map<String, VividTag> tagMap) {
   final result = <InlineSpan>[];
   final nodes = parse(text).body!.nodes;
   for (var node in nodes) {
@@ -18,13 +18,13 @@ List<InlineSpan> parseToSpan(String text, Map<String, SuperTag> tagMap) {
       final element = node as html.Element;
       final name = element.localName;
       final tag = tagMap[name];
-      if (tag is SuperWidgetTag) {
+      if (tag is VividWidgetTag) {
         // TODO child
         result.add(WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: tag.builder([], element.attributes),
         ));
-      } else if (tag is SuperTextTag) {
+      } else if (tag is VividTextTag) {
         result.add(tag.builder(node.innerHtml, element.attributes));
       } else {
         result.add(defaultSpanBuilder(node));

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.keysking.supertext_example">
+    package="com.keysking.vivid_text_example">
    <application
-        android:label="supertext_example"
+        android:label="vivid_text_example"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

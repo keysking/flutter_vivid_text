@@ -1,6 +1,6 @@
-# supertext_example
+# vivid_text_example
 
-Demonstrates how to use the supertext plugin.
+Demonstrates how to use the vivid_text plugin.
 
 ## Getting Started
 
